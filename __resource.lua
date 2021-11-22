@@ -2,7 +2,7 @@ fx_version 'cerulean'
 game 'gta5'
 
 description 'rental'
-version '2.0.0'
+version '1.0.0'
 
 client_scripts { 
     "client.lua"
