@@ -18,3 +18,6 @@ https://cdn.discordapp.com/attachments/880527643852816416/912356098961461278/unk
 
 
 https://cdn.discordapp.com/attachments/880527643852816416/912356175348138015/unknown.png
+
+
+```https://discord.gg/c57hYbqfRd```
