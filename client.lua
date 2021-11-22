@@ -4,9 +4,9 @@ local QBCore = exports['qb-core']:GetCoreObject()
 local Blipy = {}
 local JuzBlip = false
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do
-        Citizen.Wait(0)
+        Wait(0)
         if not JuzBlip then
             Blipy['car'] = AddBlipForCoord(311.85, -1110.96, 28.4)
             SetBlipSprite(Blipy['car'], 488)
@@ -14,20 +14,20 @@ Citizen.CreateThread(function()
             SetBlipScale(Blipy['car'], 0.8)
             SetBlipAsShortRange(Blipy['car'], true)
             BeginTextCommandSetBlipName("STRING")
-            AddTextComponentString('rental')
+            AddTextComponentString('Rental')
             EndTextCommandSetBlipName(Blipy['car'])
-						JuzBlip = true
+	    JuzBlip = true
         end
     end
 end)
 
-Citizen.CreateThread(function()
+CreateThread(function()
     SpawnNPC()
 end)
 ----------------------------------
 
 SpawnNPC = function()
-    Citizen.CreateThread(function()
+    CreateThread(function()
         RequestModel(GetHashKey('a_m_m_mexlabor_01'))
         while not HasModelLoaded(GetHashKey('a_m_m_mexlabor_01')) do
             Wait(1)
@@ -45,8 +45,7 @@ CreateNPC = function()
 end
 
 
-RegisterNetEvent('MenuRental')
-AddEventHandler('MenuRental', function(car)
+RegisterNetEvent('MenuRental', function(car)
     exports['qb-menu']:openMenu({
         {
             header = "🚘 rental guy",
@@ -81,16 +80,14 @@ AddEventHandler('MenuRental', function(car)
     })
 end)
 
-RegisterNetEvent('DeleteCar')
-AddEventHandler('DeleteCar', function()
+RegisterNetEvent('DeleteCar', function()
     local car = GetVehiclePedIsIn(PlayerPedId(),true)
     DeleteVehicle(car)
     DeleteEntity(car)
     TriggerEvent('animations:client:EmoteCommandStart', {"keyfob"})
 end)
 
-RegisterNetEvent('SpawnCar')
-AddEventHandler('SpawnCar', function(car, data)
+RegisterNetEvent('SpawnCar', function(car, data)
     TriggerEvent('animations:client:EmoteCommandStart', {"notepad"})
     QBCore.Functions.Progressbar('SpawnCar', 'geting car ready...', 6000, false, true, {
         disableMovement = true,
