@@ -17,4 +17,4 @@ code made from  free snippets by me working good with qb-menu and qb-target last
 ![6v2dJU4sLY](https://user-images.githubusercontent.com/89742984/142890865-473a84f1-e4d8-492b-893f-7438ed55c074.png)
 
 
-```https://discord.gg/c57hYbqfRd```
+```https://discord.gg/qbcore```
