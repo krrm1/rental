@@ -1,15 +1,16 @@
 # rental
 qb-core rantal
 
+تأجير سياره او موتر سيكل او بسكليت 
 
-car or bike rent with buy system 
+code made from  free snippets by me working good with qb-menu and qb-target last ver (ANY ONE COPY ME CODE DONY FORGET TO BUT MY GITHUB LINK !!!)
+بختصار انا الي مسوي السكربت اي واحد ينسخ السكربت 
+يحط رابط القيت هب تبعي 
 
 needs:
 https://github.com/qbcore-framework/qb-menu
 
 https://github.com/BerkieBb/qb-target
-
-code made from  free snippets by me working good with qb-menu and qb-target last ver 
 
 ![FiveM_GTAProcess_LcXE6Vivzl](https://user-images.githubusercontent.com/89742984/142890901-41613ea3-a8c8-4add-88ed-b35e975810d7.png)
 
