@@ -1,5 +1,5 @@
 # rental
-qb-core rantal
+qb-core rent car 
 
 تأجير سياره او موتر سيكل او بسكليت 
 
